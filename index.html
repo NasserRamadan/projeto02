@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de telefones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/telefone.jpg" alt="ícone de telefone">
+            <h1>Agenda de telefones</h1>
+        </header>
+        <h2>Favor digitar o nome desejado e o telefone completo a ser salvo.</h2>
+        <form id="form-cadastro">
+            <input type="text" id="nome-cadastro" required placeholder="Digite o nome">
+            <input type="number" id="telefone-cadastro" required placeholder="Digite o telefone">
+            <button type="submit">Adicionar +</button>
+        </form>
+        <table>
+            <thead>
+                <td>
+                    <th>Nomes</th>
+                </td>
+                <td>
+                    <th>Telefones</th>
+                </td>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>
+                        ---
+                </td>
+                    <td>---</td>
+                </tr>
+                </tfoot>
+        </table>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
