@@ -5,32 +5,34 @@ form.addEventListener('submit', function(e) {
     e.preventDefault();
 });
 
+
 let linhas = '';
+
 
 adicionaLinha();
 atualizaTabela();
 
 
-
-
-function adicionaLinha () {
+function adicionaLinha() {
     const inputNomeCadastro = document.getElementById('nome-cadastro');
-    const inputNTelefoneCadastro = document.getElementById('telefone-cadastro');
-;
+    const inputTelefoneCadastro = document.getElementById('telefone-cadastro');
 
-let linha = '<tr>';{
-        linha += `<td>${inputNomeCadastro.value}</td>`;
-        linha += `<td>${inputNTelefoneCadastro.value}</td>`;
-        linha +='</tr>';
 
-        linhas += linha;
-    }
+    let linha = '<tr>';
+    linha += `<td>${inputNomeCadastro.value}</td>`;
+    linha += `<td>${inputTelefoneCadastro.value}</td>`;
+    linha += '</tr>';
 
-    inputNomeAtividade.value = '';
-    inputNotaAtividade.value = '';
+
+    linhas += linha;
+
+
+    inputNomeCadastro.value = '';
+    inputNTelefoneCadastro.value = '';
 }
 
-function atualizaTabela () {
+
+function atualizaTabela() {
     const corpoTabela = document.querySelector('tbody');
     corpoTabela.innerHTML = linhas;
 }
