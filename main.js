@@ -28,7 +28,7 @@ function adicionaLinha() {
 
 
     inputNomeCadastro.value = '';
-    inputNTelefoneCadastro.value = '';
+    inputTelefoneCadastro.value = '';
 }
 
 
