@@ -5,6 +5,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    padding-top: 100px;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -67,11 +71,12 @@ table th {
     padding: 16px;
     font-size: 24px;
     font-weight: bold;
+    text-align: center;
 }
 
-table tbody {
-    padding: 1px;
+table td {
+    padding: 10px 0;
     font-size: 20px;
-    font-weight: bold;
+    text-align: center;
     margin-bottom: 2px;
 }
